@@ -36,30 +36,15 @@ namespace Iteration
             {
                 // find out if the number is odd or even
                 string numType = "";
-                if (i % 2 == 0)
-                {
-                    numType = "Even";
-                }
-                else
-                {
-                    numType = "Odd";
-                }
+                if (i % 2 == 0) {numType = "Even";}
+                else {numType = "Odd";}
 
                 // find out if the number is a multiple of 3
                 bool threeMult = false;
-                if (i % 3 == 0)
-                {
-                    threeMult = true;
-                }
+                if (i % 3 == 0) {threeMult = true;}
 
-                if (threeMult)
-                {
-                    Console.WriteLine($"{i} is {numType} and a multiple of 3");
-                }
-                else
-                {
-                    Console.WriteLine($"{i} is {numType}");
-                }
+                if (threeMult) {Console.WriteLine($"{i} is {numType} and a multiple of 3");}
+                else {Console.WriteLine($"{i} is {numType}");}
             }
 
             Console.ReadLine();
